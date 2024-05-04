@@ -1,0 +1,16 @@
+# ignore all
+*
+
+# unignore all with extensions
+!*.*
+
+# unignore all dirs
+!*/
+
+# unignore files
+
+# ignore dirs
+logseq/bak/
+
+# ignore files
+
