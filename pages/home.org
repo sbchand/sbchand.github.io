@@ -1,9 +1,0 @@
-:PROPERTIES:
-:public: true
-:END:
-
-* Balachandher Srinivasan
-:PROPERTIES:
-:heading: 2
-:END:
-*

@@ -137,7 +137,7 @@
  ;; 3. Set "home" as the home page and display multiple pages in the right sidebar:
  ;; :default-home {:page "home", :sidebar ["Page A" "Page B"]}
  ;; sb start
- :default-home {:page "home"}
+ :default-home {:page "Balachandher Srinivasan"}
  ;; sb end
 
  ;; Set the default location for storing notes.
@@ -322,7 +322,7 @@
  ;; Example usage:
  ;; :block-hidden-properties #{:public :icon}
  ;; sb start
- :block-hidden-properties #{:public :icon}
+ ;; :block-hidden-properties #{:public :icon}
  ;; sb end
 
  ;; Create a page for all properties.
