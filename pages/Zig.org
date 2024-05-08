@@ -1,0 +1,21 @@
+:PROPERTIES:
+:alias: zig
+:END:
+
+* References
+:PROPERTIES:
+:heading: 2
+:END:
+** Zig
+*** https://ziglang.org/
+*** https://github.com/ziglang/zig
+** https://gist.github.com/ityonemo/769532c2017ed9143f3571e5ac104e50
+** Nix
+*** https://github.com/mitchellh/zig-overlay
+** PostgreSQL
+*** https://github.com/xataio/pgzx
+** Videos
+*** {{video https://www.youtube.com/watch?v=YXrb-DqsBNU&pp=ygUDemln}}
+*** {{video https://www.youtube.com/watch?v=wFlyUzUVFhw}}
+*** {{video https://www.youtube.com/watch?v=kxT8-C1vmd4}}
+*** {{video https://www.youtube.com/playlist?list=PLtB7CL7EG7pCw7Xy1SQC53Gl8pI7aDg9t}}

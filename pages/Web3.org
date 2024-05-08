@@ -1,0 +1,15 @@
+* Data
+:PROPERTIES:
+:heading: 2
+:END:
+** https://ipfs.io/
+* References
+:PROPERTIES:
+:heading: 2
+:END:
+** https://github.com/gdamdam/awesome-decentralized-web
+** radicle
+*** https://radicle.xyz/
+** Video
+*** {{video https://www.youtube.com/watch?v=WRFbpissttY}}
+*** {{video https://www.youtube.com/watch?v=S-sks01SE4s&embeds_referring_euri=https%3A%2F%2Fthenewstack.io%2F&feature=emb_imp_woyt}}

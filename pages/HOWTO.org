@@ -1,0 +1,7 @@
+* {{query (property :type "howto")}}
+:PROPERTIES:
+:query-sort-by: page
+:query-table: true
+:query-sort-desc: false
+:query-properties: [:page]
+:END:

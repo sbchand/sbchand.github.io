@@ -95,9 +95,6 @@
  ;; This option takes precedence over the local `logseq/custom.css` file.
  ;; Example usage:
  ;; :custom-css-url "@import url('https://cdn.jsdelivr.net/gh/dracula/logseq@master/custom.css');"
- ;; sb start
- :custom-css-url "@import url('https://logseq.catppuccin.com/ctp-mocha.css');"
- ;; sb end
 
  ;; Specify a custom JS import.
  ;; This option takes precedence over the local `logseq/custom.js` file.
@@ -321,9 +318,6 @@
  ;; Hide specific block properties.
  ;; Example usage:
  ;; :block-hidden-properties #{:public :icon}
- ;; sb start
- ;; :block-hidden-properties #{:public :icon}
- ;; sb end
 
  ;; Create a page for all properties.
  ;; Default value: true

@@ -1,0 +1,14 @@
+*
+* HOWTO
+:PROPERTIES:
+:heading: 2
+:type: howto
+:END:
+** always use IPv4
+*** use ~--ipv4~ switch
+*** #+BEGIN_TIP
+#+BEGIN_SRC bash
+echo '--ipv4' >> ~/.curlrc
+#+END_SRC
+#+END_TIP
+*

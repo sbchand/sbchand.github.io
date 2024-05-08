@@ -1,0 +1,62 @@
+:PROPERTIES:
+:alias: Windows Subsystem for Linux
+:END:
+
+* HOWTO
+:PROPERTIES:
+:heading: 2
+:type: howto
+:END:
+** upgrade
+*** #+BEGIN_SRC bash
+sudo apt update && sudo apt full-upgrade && sudo do-release-upgrade
+#+END_SRC
+** start WSL on Windows startup
+*** #+BEGIN_TIP
+Use ~shell:startup~ to create a shortcut to a batch file to start WSL
+#+END_TIP
+*** #+BEGIN_SRC shell
+@echo off
+
+@REM wsl -t Ubuntu
+
+@REM wsl -d Ubuntu -- sudo service cron restart
+@REM wsl -d Ubuntu -- sudo service dictd restart
+
+@REM wsl -d Ubuntu -- sudo systemctl restart user@1000
+@REM wsl -d Ubuntu --user root true
+
+wsl -d Ubuntu --user root -- /bin/bash -c "echo 'Starting Ubuntu...'"
+wsl -d Ubuntu -- /bin/bash -c "/usr/bin/loginctl enable-linger $(id -u)"
+wsl -d Ubuntu -- /bin/bash -c "~/bin/emacs-daemon"
+
+@REM minikube
+@REM wsl -d Ubuntu -- sudo service nginx start
+@REM wsl -d Ubuntu -- sudo service docker start
+@REM wsl -d Ubuntu -- sudo sysctl -w vm.max_map_count=262144
+#+END_SRC
+** sync using ~rsync~
+*** #+BEGIN_SRC bash
+# mount
+sudo mkdir /mnt/d
+sudo mount -t drvfs D: /mnt/d
+
+# no-copy, dry run
+rsync -avn /source/ /mnt/d/backup/
+# copy
+rsync -av /source/ /mnt/d/backup/
+
+# unmount
+sudo umount /mnt/d
+#+END_SRC
+*** https://thedatafrog.com/en/articles/backup-rsync-windows-wsl/
+* References
+:PROPERTIES:
+:heading: 2
+:END:
+** WSL/Ubuntu
+*** https://randombytes.substack.com/p/wslg-on-making-wslg-and-systemd-play
+*** https://ubuntu.com/tutorials/enabling-gpu-acceleration-on-ubuntu-on-wsl2-with-the-nvidia-cuda-platform#1-overview
+** Issues
+*** https://github.com/microsoft/WSL/issues/8918
+*** https://github.com/microsoft/WSL/issues/10205

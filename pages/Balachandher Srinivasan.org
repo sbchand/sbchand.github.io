@@ -4,5 +4,7 @@
 :END:
 
 * #+BEGIN_NOTE
+*NOTE*
+
 The views expressed here are based on my learnings and mostly for my own personal reference; my thoughts and or opinions change from time to time, considering better tools, technologies, trends and therefore my notes may be out-of-date. 
 #+END_NOTE

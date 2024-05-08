@@ -1,0 +1,27 @@
+* HOWTO
+:PROPERTIES:
+:heading: 2
+:type: howto
+:END:
+** rename multiple files
+*** enter "dired" mode
+:PROPERTIES:
+:logseq.order-list-type: number
+:END:
+**** ~C-x d~
+*** enter "editing" mode
+:PROPERTIES:
+:logseq.order-list-type: number
+:END:
+**** ~C-x C-q~
+*** replace or manually edit file names
+:PROPERTIES:
+:logseq.order-list-type: number
+:END:
+**** ~M-%~
+*** apply or cancel changes
+:PROPERTIES:
+:logseq.order-list-type: number
+:END:
+**** ~C-c C-c~ to apply
+**** ~C-c ESC~ to cancel

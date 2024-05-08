@@ -1,0 +1,34 @@
+:PROPERTIES:
+:alias: wezterm
+:END:
+
+* HOWTO
+:PROPERTIES:
+:heading: 2
+:type: howto
+:END:
+** install terminfo
+*** #+BEGIN_NOTE
+Ensure to set ~config.term = "wezterm"~ in ~wezterm.lua~
+#+END_NOTE
+*** #+BEGIN_SRC bash
+tempfile=$(mktemp) \
+  && curl -o $tempfile https://raw.githubusercontent.com/wez/wezterm/main/termwiz/data/wezterm.terminfo \
+  && tic -x -o ~/.terminfo $tempfile \
+  && rm $tempfile
+#+END_SRC
+*** https://wezfurlong.org/wezterm/config/lua/config/term.html
+** run in nix
+*** #+BEGIN_NOTE
+~nix~ requires NixGL
+#+END_NOTE
+*** #+BEGIN_SRC bash
+WAYLAND_DISPLAY=wezterm nix run --impure github:guibou/nixGL#nixGLIntel -- wezterm
+#+END_SRC
+*** https://github.com/wez/wezterm/issues/3334
+*** https://github.com/nix-community/nixGL
+* References
+:PROPERTIES:
+:heading: 2
+:END:
+** https://wezfurlong.org/wezterm/index.html
